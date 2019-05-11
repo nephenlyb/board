@@ -7,6 +7,7 @@
     <meta name="description" content="小蚂蚁编辑器提供各种新媒体助手工具大全，其中包括微信图文视频提取，微信超链接，微信短网址,微信一键关注页面等，利用小工具往往能够达到事半功倍的效果，能大幅度提高微信图文的编辑排版效率！">
     <meta name="keywords" content="订阅号留言板，留言功能，公众号">
     <link rel="stylesheet" href="css/tools.css?ver=180925"/>
+    <link rel="stylesheet" type="text/css" href="css/kefu.css">
 
     <style>
         /*微信背景图提取*/
@@ -20,8 +21,32 @@
     </style>
 </head>
 <body onLoad="checkCookie()">
-<!-- 顶部 -->
 
+<!--在线客服  -->
+<div class="scrollsidebar" id="scrollsidebar">
+  <div class="side_content">
+    <div class="side_list">
+      <div class="side_title"><a title="隐藏" class="close_btn"><span>关闭</span></a></div>
+      <div class="side_center">
+<!--         <div class="custom_service">
+          <p> <a title="点击这里给我发消息" href="###" target="_blank"><img src="http://wpa.qq.com/pa?p=2:8983659:41"></a> </p>
+        </div> -->
+        <div class="other">
+          <p><img src="images/qrcode.png" width="80"/></p>
+<!--           <p>客户服务热线</p>
+          <p>0755-400-12345</p> -->
+        </div>
+<!--         <div class="msgserver">
+          <p><a href="###" >联系我们</a></p>
+        </div> -->
+      </div>
+      <div class="side_bottom"></div>
+    </div>
+  </div>
+  <div class="show_btn"><span>在线客服</span></div>
+</div>
+
+<!-- 顶部 -->
 <link rel="stylesheet" href="css/font-awesome.min.css?ver=1"/>
 <link rel="stylesheet" href="css/public.min.css?ver=20190108"/>
 <link rel="stylesheet/Icon" href="/static/home/img/ico.ico">
@@ -172,6 +197,7 @@
 </body>
 <script type="text/javascript" src="js/clipboard.min.js"></script>
 <script type="text/javascript" src="js/tools.js?ver=1"></script>
+<script type="text/javascript" src="js/kefu.js"></script>
 <script>
     var getUrl="http://www.xmyeditor.com/home/tools/geturl.html";
     var getVideo="http://www.xmyeditor.com/home/tools/getvideo.html";
@@ -196,7 +222,6 @@
 
     $(".header_menu_li_a1").removeClass('header_menu_li_a1');
     $(".header_menu_li_a").eq(4).addClass('header_menu_li_a1');
-
 
 </script>
 
