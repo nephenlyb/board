@@ -1,0 +1,1592 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: PingFang SC, Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Microsoft Yahei, \\5FAE\8F6F\96C5\9ED1, STHeiti, \\534E\6587\7EC6\9ED1, sans-serif;
+    word-wrap: break-word
+}
+
+ul li {
+    list-style: none
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    vertical-align: middle
+}
+
+body {
+    background-color: #edeceb
+}
+
+a {
+    text-decoration: none
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+}
+
+input::-webkit-input-placeholder {
+    color: #ddd;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+input::-moz-input-placeholder {
+    color: #ddd;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+input::-ms-input-placeholder {
+    color: #ddd;
+    lette r-spacing: 1px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none
+}
+
+textarea::-webkit-input-placeholder {
+    color: #ddd;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+textarea::-moz-input-placeholder {
+    color: #ddd;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+textarea::-ms-input-placeholder {
+    color: #ddd;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+input, textarea, select, button {
+    outline: none;
+    border: 0px;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 40px
+    min-width:1280px;
+}
+
+.headerbg {
+    background-color: #272d2f;
+    position: relative;
+    text-align: center;
+    color: #ddd;
+    font-size: 12px;
+    letter-spacing: 1px;
+    height: 40px
+}
+
+.header_left {
+    width: 450px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    overflow: hidden
+}
+
+.header_center {
+    line-height: 40px;
+    height: 40px;
+    margin: 0 410px 0 460px
+}
+
+.header_Logo {
+    margin-left: 20px;
+    margin-top:9px;
+    float: left;
+    width: 150px;
+    cursor: pointer
+}
+
+.header_Logo img {
+    width: 100%;
+    vertical-align: middle
+}
+
+.header_News {
+    margin-top: 1px;
+    float: right;
+    width: 250px;
+    overflow: hidden;
+    letter-spacing: 1px;
+    position: relative;
+    height: 40px
+}
+
+.header_News ul {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.header_News li {
+    height: 40px;
+    width: 250px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 40px;
+}
+
+.header_News p {
+    color: #eee;
+    text-align: left;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 微软雅黑, Microsoft YaHei
+}
+
+.header_News p:hover {
+    color: #ff9600
+}
+
+.header_News p i.fa {
+    font-size: 16px;
+    position: relative;
+    margin-right: 6px;
+    top: 1px
+}
+
+.header_News a {
+    color: #fff
+}
+
+.header_News:hover a {
+    color: #ff9600
+}
+
+.header_menu {
+    width: 630px;
+    height: 40px;
+    margin: 0 auto
+}
+
+.header_menu li {
+    cursor: pointer;
+    height: 40px;
+    margin: 0 10px 0 0;
+    width: 94px;
+    float: left
+}
+
+.header_menu_li_a {
+    height: 40px;
+    width: 94px;
+    display: inline-block;
+    color: #fff
+}
+
+.header_menu_li_a:hover {
+    background-color: #44b549;
+    color: #fff
+}
+
+.header_menu_li_a i {
+    margin-left: 0
+}
+
+.header_menu_li_a1 {
+    background-color: #44b549
+}
+
+.header_tools {
+    position: relative
+}
+
+.header_tools_list {
+    overflow: hidden;
+    -webkit-transition: height .1s;
+    -moz-transition: height .1s;
+    -o-transition: height .1s;
+    transition: height .1s;
+    height: 0;
+    width: 94px;
+    background-color: rgba(39, 45, 47, 0.8)
+}
+
+.header_tools:hover .header_tools_list {
+    height: 320px
+}
+
+.header_tools_list a {
+    color: #fff;
+    display: block
+}
+
+.header_tools_list a:hover {
+    background-color: #44b549
+}
+
+.header_right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    /*width: 300px*/
+}
+
+.header_login, .header_register, .header_split, .lao-yong-hu {
+    float: right;
+    cursor: pointer;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 8px
+}
+
+.header_login {
+    margin-left: 0
+}
+
+.header_login a {
+    color: #ff9600
+}
+
+.header_split {
+    height: 14px;
+    width: 2px;
+    background-color: #888;
+    margin-top: 13px;
+    margin: 13px 10px 0
+}
+
+.header_register {
+    margin-right: 60px
+}
+
+.header_register a {
+    color: #fff
+}
+
+.header_login a, .header_register a {
+    padding: 0 8px;
+    border-radius: 4px;
+    height: 24px;
+    display: block
+}
+
+.header_login a:hover, .header_register a:hover {
+    background-color: #69777b
+}
+
+.ThirdPartyLoginBodyP1 a, .ThirdPartyLoginBodyP2 a {
+    color: #ccc
+}
+
+.lao-yong-hu {
+    margin-right: 0
+}
+
+.lao-yong-hu a {
+    color: #ff9600;
+    font-weight: bold
+}
+
+.lao-yong-hu a {
+    padding: 0 8px;
+    border-radius: 4px;
+    height: 24px;
+    display: block
+}
+
+.lao-yong-hu a:hover {
+    background-color: #69777b
+}
+
+.header-user-self {
+    margin-right: 50px;
+    cursor: pointer;
+    position: relative;
+    max-width: 180px;
+    height: 40px;
+    float: right
+}
+
+.header-user-self-one {
+    height: 40px;
+    width: 100%
+}
+
+.header-user-self-one:hover {
+    background-color: #31393b
+}
+
+.header-user-self-img {
+    position: relative;
+    margin-left: 5px;
+    height: 26px;
+    width: 26px;
+    margin-top: 7px;
+    float: left
+}
+
+.header-user-self-img img {
+    box-shadow: 0 0 5px #475255;
+    margin-top: 0;
+    float: left;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%
+}
+
+.header-user-self-img i {
+    color: #44b549;
+    float: left;
+    font-size: 26px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0
+}
+
+.header-user-self-img span {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+    top: 19px;
+    left: 2px
+}
+
+.header-user-self-one-vip1 {
+    position: absolute;
+    width: 20px;
+    top: -6px;
+    right: -5px
+}
+
+.header-user-self-one-vip1 img {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 0 0 #475255;
+    height: auto
+}
+
+.header-user-name {
+    height: 26px;
+    line-height: 26px;
+    margin-left: 5px;
+    margin-top: 7px;
+    float: left;
+    max-width: 100px;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.header-user-triangle {
+    line-height:0px;
+    float: left;
+    margin:18px 0 0 6px;
+    color: #999
+}
+
+.header-user-self:hover .head-self-center {
+    height: 400px
+}
+
+.head-self-center {
+    overflow: hidden;
+    -webkit-transition: height .1s;
+    -moz-transition: height .1s;
+    -o-transition: height .1s;
+    transition: height .1s;
+    height: 0;
+    width: 270px;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    top: 40px;
+    right: -50px
+}
+
+.head-self-center-one {
+    box-sizing: border-box;
+    padding-top: 14px;
+    text-align: center;
+    height: 90px;
+    border-bottom: 1px solid #ddd;
+    width: 270px
+}
+
+.head-self-center-one-p1 {
+    height: 34px;
+    line-height: 34px;
+    width: 270px
+}
+
+.head-self-center-one-p1 img {
+    width: 34px;
+    height: 34px;
+    border: 2px solid #aaa;
+    border-radius: 50%
+}
+
+.head-self-center-one-p1 i {
+    font-size: 34px;
+    display: inline-block;
+    line-height: 34px;
+    color: #788d9b
+}
+
+.head-self-center-one-p2 {
+    position: relative;
+    font-size: 12px;
+    color: #2a2f32;
+    letter-spacing: 1px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 8px
+}
+
+.head-self-center-one-p2 span {
+    display: inline-block;
+    margin-right: -2px;
+    overflow: hidden;
+    height: 28px;
+    vertical-align: middle
+}
+
+.header-user-vip {
+    display: inline-block;
+    vertical-align: top;
+    color: #ffc107;
+    margin-left: 0;
+    margin-right: -2px;
+    font-size: 12px
+}
+
+.header-user-mail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 8px;
+    font-size: 16px;
+    color: #000
+}
+
+.header-user-mail i {
+    color: #666
+}
+
+.header-user-mail b {
+    float: left;
+    margin-top: -3px;
+    margin-left: 2px
+}
+
+.header-user-mail span {
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    background-color: #ff5029;
+    color: #fff;
+    font-size: 12px;
+    line-height: 10px;
+    border-radius: 50%;
+    right: -4px;
+    top: 1px
+}
+
+.head-self-center-two {
+    padding: 15px;
+    box-sizing: border-box;
+    width: 270px;
+    height: 270px
+}
+
+.head-self-center-two a {
+    font-size: 12px;
+    color: #333;
+    float: left;
+    width: 80px;
+    height: 80px
+}
+
+.head-self-center-two a:hover {
+    background-color: #f5f5f5
+}
+
+.head-self-center-two a i {
+    font-size: 22px;
+    margin: 11px auto 0;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    color: #788d9b
+}
+
+.head-self-center-two a span {
+    margin-top: 8px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    color: #333;
+    width: 100%;
+    text-align: center
+}
+
+.head-self-center-three {
+    background-color: #f5f5f5;
+    height: 40px;
+    width: 270px
+}
+
+.head-self-center-three:hover {
+    background-color: #eee
+}
+
+.head-self-center-three a {
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 40px;
+    width: 100%;
+    color: #2a2f32;
+    height: 100%;
+    display: inline-block
+}
+
+.userLogin input::-webkit-input-placeholder {
+    color: #bbb;
+    letter-spacing: 1px;
+    font-size: 15px
+}
+
+.userLogin input::-moz-input-placeholder {
+    color: #bbb;
+    letter-spacing: 1px;
+    font-size: 15px
+}
+
+.userLogin input::-ms-input-placeholder {
+    color: #bbb;
+    letter-spacing: 1px;
+    font-size: 15px
+}
+
+.userLogin {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -240px
+}
+
+.userLoginTitle {
+    height: 38px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    box-sizing: border-box
+}
+
+.userLoginTitleP1 {
+    line-height: 38px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #666
+}
+
+.userLoginTitleP2 {
+    cursor: pointer;
+    position: absolute;
+    color: #636363;
+    font-size: 20px;
+    line-height: 38px;
+    top: 0;
+    right: 8px
+}
+
+.userLoginTitleP2:hover {
+    color: #f35858
+}
+
+.ne-ol-uss {
+    padding: 40px 0 80px;
+    width: 500px;
+    box-sizing: border-box;
+    height: 389px
+}
+
+.ne-ol-uss-tip {
+    line-height: 1.7;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: #333
+}
+
+.ne-ol-uss-tip p {
+    font-family: 黑体, SimHei !important;
+    margin-top: 10px
+}
+
+.ne-ol-uss-btn {
+    background-color: #44b549;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 6px
+}
+
+.ne-ol-uss-btn a {
+    color: #fff
+}
+
+.ne-uss-btn {
+    margin-top: 40px
+}
+
+.ol-uss-btn {
+    margin-top: 40px
+}
+
+.ol-uss-btn:hover, .ne-uss-btn:hover {
+    background-color: #2f9833
+}
+
+.userLoginBody {
+    padding-top: 20px;
+    box-sizing: border-box;
+    width: 500px
+}
+
+.userLoginBodyTitle {
+    height: 40px;
+    line-height: 40px;
+    text-align: center
+}
+
+.userLoginBodyTitleP1, .userLoginBodyTitleP2, .userLoginBodyTitleP3 {
+    vertical-align: middle;
+    display: inline-block
+}
+
+.userLoginBodyTitleP2 {
+    width: 2px;
+    height: 18px;
+    background-color: #999;
+    margin: 0 15px
+}
+
+.userLoginBodyTitleP1, .userLoginBodyTitleP3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #888;
+    cursor: pointer
+}
+
+.userLoginBodyTitleP1:hover {
+    color: #44b549
+}
+
+.userLoginBodyTitleP3:hover {
+    color: #44b549
+}
+
+.userLoginBodyTitlePColor {
+    color: #44b549
+}
+
+.userLoginName {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin: 20px auto 0;
+    box-sizing: border-box;
+    width: 320px;
+    height: 44px
+}
+
+.userLoginName:hover {
+    border: 1px solid #87bd89
+}
+
+.userLoginNameP1 {
+    color: #999;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    line-height: 42px;
+    height: 42px;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.userLoginName:hover .userLoginNameP1 {
+    color: #87bd89
+}
+
+.userLoginNameP2 input {
+    font-size: 18px;
+    color: #666;
+    border: 0;
+    position: absolute;
+    left: 50px;
+    width: 262px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 8px 0;
+    box-sizing: border-box
+}
+
+.userLoginPassword {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin: 30px auto 0;
+    box-sizing: border-box;
+    width: 320px;
+    height: 44px
+}
+
+.userLoginPassword:hover {
+    border: 1px solid #87bd89
+}
+
+.userLoginPasswordP1 {
+    color: #999;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    line-height: 42px;
+    height: 42px;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.userLoginPassword:hover .userLoginPasswordP1 {
+    color: #44b549
+}
+
+.userLoginPasswordP2 input {
+    font-size: 18px;
+    color: #666;
+    border: 0;
+    position: absolute;
+    left: 50px;
+    width: 262px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 8px 0;
+    box-sizing: border-box
+}
+
+.userLoginExplain {
+    position: relative;
+    width: 320px;
+    margin: 8px auto 0;
+    height: 28px
+}
+
+.userLoginExplainP1 {
+    cursor: pointer;
+    float: left;
+    position: relative;
+    font-size: 12px;
+    line-height: 17px;
+    color: #999;
+    box-sizing: border-box;
+    padding-left: 24px
+}
+
+.userLoginExplainP1 p {
+    box-sizing: border-box;
+    position: absolute;
+    left: 3px;
+    top: 1px;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    border: 1px solid #999
+}
+
+.userLoginExplainP1i {
+    display: none;
+    font-size: 10px;
+    position: absolute;
+    text-align: center;
+    line-height: 12px;
+    color: #44b549
+}
+
+.userLoginExplainP1:hover p {
+    border: 1px solid #44b549
+}
+
+.userLoginExplainP2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 17px;
+    font-size: 12px
+}
+
+.userLoginExplainP2 a {
+    color: #44b549
+}
+
+.userLoginExplainP2 a:hover {
+    border-bottom: 1px solid #44b549
+}
+
+.userLoginPrompt {
+    margin: 10px auto 0;
+    width: 320px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+    color: #f35858
+}
+
+.userLoginBtn1 {
+    cursor: pointer;
+    width: 320px;
+    line-height: 36px;
+    background-color: #87bd89;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    color: #fff;
+    height: 36px;
+    text-align: center
+}
+
+.userLoginBtn1:hover {
+    background-color: #44b549
+}
+
+.ThirdPartyLoginTitle {
+    width: 320px;
+    margin: 32px auto 0;
+    height: 28px;
+    text-align: center
+}
+
+.ThirdPartyLoginTitleP1, .ThirdPartyLoginTitleP3 {
+    vertical-align: middle;
+    width: 110px;
+    display: inline-block;
+    height: 1px;
+    background-color: #ddd
+}
+
+.ThirdPartyLoginTitleP2 {
+    width: 60px;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    color: #ccc
+}
+
+.ThirdPartyLoginBody {
+    text-align: center;
+    width: 320px;
+    height: 40px;
+    margin: 2px auto 0
+}
+
+.ThirdPartyLoginBodyP1, .ThirdPartyLoginBodyP2 {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 12px;
+    cursor: pointer;
+    color: #ccc
+}
+
+.ThirdPartyLoginBodyP1:hover {
+    color: #44b549
+}
+
+.ThirdPartyLoginBodyP2:hover {
+    color: #44b549
+}
+
+.userLoginBtn2 {
+    width: 320px;
+    margin: 10px auto 0;
+    text-align: right;
+    font-size: 13px;
+    color: #999
+}
+
+.userLoginBtn2 a {
+    color: #44b549
+}
+
+.userLoginBtn2 a:hover {
+    border-bottom: 1px solid #44b549
+}
+
+.userLoginQRcode {
+    width: 320px;
+    margin: 0 auto;
+    padding: 20px 0 60px 0;
+    box-sizing: border-box
+}
+
+.userLoginQRcodeP1 {
+    width: 200px;
+    margin: 0 auto
+}
+
+.userLoginQRcodeP1 img {
+    opacity: 1
+}
+
+.userLoginQRcodeP2 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 13px 0 0;
+    color: #666
+}
+
+.userLoginQRcodeP2 span {
+    color: #44b549
+}
+
+.userLoginQRcodeP3 {
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 3px
+}
+
+.Foot {
+    width: 100%;
+    min-width: 1200px;
+    height: 160px;
+    background-color: #000;
+    font-size: 14px;
+    margin-top: 30px
+}
+
+.FootBody {
+    width: 1200px;
+    margin: 0 auto;
+    height: 160px;
+    background-color: #000;
+    position: relative
+}
+
+.Friend-link {
+    color: #999;
+    float: left;
+    width: 90%;
+    margin-top: 20px
+}
+
+.Friend-link-div {
+    float: left;
+    width: 7%
+}
+
+.Friend-link-ul {
+    width: 93%;
+    float: left
+}
+
+.Friend-link li {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    height: 34px
+}
+
+.Friend-link li a {
+    color: #999
+}
+
+.Friend-link li a:hover {
+    color: #44b549
+}
+
+.FootMenu {
+    color: #999;
+    float: left;
+    width: 100%;
+    margin-top: 10px
+}
+
+.FootMenu li {
+    display: inline-block;
+    float: left;
+    margin-right: 27px
+}
+
+.FootMenu li a {
+    color: #999
+}
+
+.FootMenu li a:hover {
+    color: #44b549
+}
+
+.FilingInformation {
+    color: #999;
+    font-size: 14px;
+    float: left;
+    margin-top: 10px;
+    height: 30px
+}
+
+.FilingInformation li {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    line-height: 30px
+}
+
+.FilingInformation li a {
+    color: #999;
+    font-size: 14px;
+    line-height: 30px
+}
+
+.FilingInformation li a img {
+    width: 12px
+}
+
+.FilingInformation li a:hover {
+    color: #44b549
+}
+
+.Footerweima {
+    margin-right: 10px;
+    width: 130px;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    text-align: center
+}
+
+.Footerweima p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #999
+}
+
+.Footerweima img {
+    width: 92px;
+    height: 92px;
+    border: 0;
+    padding: 4px;
+    background: #fff
+}
+
+.popUpBackground {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 101;
+    overflow: auto
+}
+
+.addGroupTan {
+    display: none;
+    margin: 150px auto 0;
+    border-radius: 10px;
+    width: 720px;
+    height: 420px;
+    background-color: #fff
+}
+
+.addGroupTanTitle {
+    height: 38px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 25px
+}
+
+.addGroupTanTitleP1 {
+    line-height: 38px;
+    text-align: center;
+    font-size: 13px;
+    color: #333
+}
+
+.addGroupTanTitleP2 {
+    cursor: pointer;
+    position: absolute;
+    color: #636363;
+    font-size: 20px;
+    line-height: 38px;
+    top: 0;
+    right: 8px
+}
+
+.addGroupTanTitleP2:hover {
+    color: #f35858
+}
+
+.addGroupTanBody {
+    width: 720px;
+    height: 382px
+}
+
+.addGroupTanLeft {
+    width: 480px;
+    float: left;
+    height: 382px;
+    border-radius: 0 0 0 10px
+}
+
+.addGroupLeftTitle {
+    letter-spacing: 1px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    color: #666;
+    width: 480px
+}
+
+.addGroupLeftBody {
+    padding-left: 40px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    width: 480px;
+    height: 342px;
+    border-radius: 0 0 0 10px
+}
+
+.addGroupLeftList {
+    position: relative;
+    background-color: #f8f8f8;
+    color: #999;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    float: left;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center
+}
+
+.addGroupRightListD1 {
+    width: 68px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 3.5px;
+    left: 6px;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.addGroupRightListD2 {
+    width: 80px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px
+}
+
+.addGroupLeftList:hover {
+    background-color: #ededed
+}
+
+.addGroupTanRight {
+    float: right;
+    width: 240px;
+    height: 382px;
+    background-color: #f5f5f5;
+    border-left: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 0
+}
+
+.addGroupRightTitle {
+    letter-spacing: 1px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    color: #666;
+    width: 240px
+}
+
+.addGroupRightBody {
+    padding-left: 26px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    width: 240px;
+    height: 270px;
+    border-radius: 0 0 10px 0
+}
+
+.addGroupRightList {
+    position: relative;
+    background-color: #fff;
+    color: #666;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border: 1px solid #d9d9d9;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    float: left;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center
+}
+
+.addGroupRighFoot {
+    position: absolute;
+    border-top: 1px solid #ddd;
+    width: 240px;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 0
+}
+
+.addGroupRighFootD1 {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    height: 42px;
+    line-height: 45px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #999
+}
+
+.addGroupRighFootD2 {
+    width: 60px;
+    height: 24px;
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #999;
+    cursor: pointer;
+    position: absolute;
+    left: 100px;
+    top: 9px;
+    font-family: '宋体';
+    background-color: #efefef
+}
+
+.addGroupRighFootD1 {
+    position: absolute;
+    left: 10px;
+    bottom: 8px;
+    font-size: 12px;
+    line-height: 62px;
+    letter-spacing: 1px;
+    color: #999
+}
+
+.addGroupRighFootD2 {
+    width: 70px;
+    height: 24px;
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #999;
+    cursor: pointer;
+    position: absolute;
+    left: 95px;
+    top: 7px;
+    background-color: #efefef
+}
+
+.addGroupRighFootD2:hover {
+    background-color: #3aceff;
+    color: #fff;
+    border: 1px solid #3aceff
+}
+
+.addLabel {
+    display: none;
+    margin: 150px auto 0;
+    border-radius: 10px;
+    width: 560px;
+    background-color: #fff
+}
+
+.addLabelTitle {
+    height: 38px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    box-sizing: border-box
+}
+
+.addLabelTitleP1 {
+    line-height: 38px;
+    text-align: center;
+    font-size: 13px;
+    color: #333
+}
+
+.addLabelTitleP2 {
+    cursor: pointer;
+    position: absolute;
+    color: #636363;
+    font-size: 20px;
+    line-height: 38px;
+    top: 0;
+    right: 8px
+}
+
+.addLabelTitleP2:hover {
+    color: #f35858
+}
+
+.addLabelBody {
+    width: 560px;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden
+}
+
+.addLabelList {
+    position: relative;
+    background-color: #f8f8f8;
+    color: #999;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border: 1px solid #eee;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left;
+    width: 115px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center
+}
+
+.addLabelList-spa {
+    z-index: 2;
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    width: 104px;
+    height: 18px;
+    line-height: 20px;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.addLabelList-div {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    width: 100%;
+    height: 28px;
+    cursor: move
+}
+
+.addLabelList:hover, #label_name:hover {
+    background-color: #eee;
+    border: 1px solid #eee;
+    color: #666
+}
+
+#label_name, #label_name_update {
+    margin-top: 3px;
+    outline: 0;
+    text-align: center;
+    width: 104px;
+    height: 22px;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    color: #888;
+    border: 0;
+    box-sizing: border-box
+}
+
+.addLabelList i {
+    display: none;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    font-size: 15px;
+    color: #cecece;
+    font-weight: 400;
+    cursor: pointer;
+    z-index: 2
+}
+
+.addLabelList i:hover {
+    color: #f35858
+}
+
+.addLabelList:hover i {
+    display: block
+}
+
+.addLabelList:hover .tuozhuai {
+    display: block
+}
+
+.label_checked {
+    background-color: #f6debd;
+    border: 1px solid #f6debd
+}
+
+.tuozhuai {
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    font-size: 47px;
+    height: 5px;
+    background: #aaa;
+    display: none;
+    cursor: move;
+    width: 5px;
+    border-radius: 50%
+}
+
+.addLabeBtn {
+    position: relative;
+    background-color: #f8f8f8;
+    color: #888;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    float: left;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center
+}
+
+.addLabelFoot {
+    height: 38px;
+    border-top: 1px solid #ddd;
+    position: relative
+}
+
+.addLabelFootP1 {
+    width: 70px;
+    height: 28px;
+    margin: 5px auto;
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #999;
+    cursor: pointer;
+    background-color: #efefef
+}
+
+.addLabelFootP2 {
+    position: absolute;
+    left: 10px;
+    bottom: 13px;
+    font-size: 12px;
+    line-height: 1em;
+    letter-spacing: 1px;
+    color: #999
+}
+
+.addLabelFootP3 {
+    position: absolute;
+    right: 20px;
+    bottom: 47px;
+    font-size: 12px;
+    line-height: 1em;
+    letter-spacing: 1px;
+    color: #bbb
+}
+
+.addLabelFootP1:hover {
+    background-color: #3aceff;
+    color: #fff;
+    border: 1px solid #3aceff
+}
+
+.sck-postion-add103{position:absolute !important;}
+
+
+
+
+/*布局*/
+.sckBg .buju001{height: 50px;box-sizing: border-box;outline: 2px solid rgba(255,150,0,0.4);outline-offset: -3px;}
+.sckBg .buju002{font-size:0px;}
+/*.buju001{height:50px;box-sizing:border-box;width:49% !important;margin:0 0.5%;border: 1px dashed rgba(0,0,0,0.5);}*/
