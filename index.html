@@ -5,7 +5,7 @@
     <title>新建留言板-订阅号留言板小程序</title>
     <meta name="referrer" content="never">
     <meta name="description" content="小蚂蚁编辑器提供各种新媒体助手工具大全，其中包括微信图文视频提取，微信超链接，微信短网址,微信一键关注页面等，利用小工具往往能够达到事半功倍的效果，能大幅度提高微信图文的编辑排版效率！">
-    <meta name="keywords" content="短网址,长链接转短链接">
+    <meta name="keywords" content="订阅号留言板，留言功能，公众号">
     <link rel="stylesheet" href="css/tools.css?ver=180925"/>
 
     <style>
@@ -19,7 +19,7 @@
         .tools-right-wxbg .wxbg-p2 a{display:inline-block;width:100%;height:100%;color:#fff;line-height:28px;font-size:14px;}
     </style>
 </head>
-<body>
+<body onLoad="checkCookie()">
 <!-- 顶部 -->
 
 <link rel="stylesheet" href="css/font-awesome.min.css?ver=1"/>
@@ -95,7 +95,7 @@
                 <div class="toolsRightBody toolsRightVideo">
                     <div class="toolsRightFirst">
                         <p class="toolsRightFirstP1">公众号名字：</p>
-                        <input type="" name="" class="toolsRightFirstInput1 publicInputText" placeholder="请输入公众号名字">
+                        <input type="" name="" class="toolsRightFirstInput1 publicInputText" placeholder="请输入已经入驻的公众号名字">
                         <p class="toolsRightFirstP3"></p>
                     </div>
                     <div class="toolsRightFirst">
