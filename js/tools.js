@@ -83,9 +83,11 @@ $(document).on("click",".newBoardBtn",function(){
         $("#coverImg").prop("src",image);
         $("#imgLookBtn").prop("href",image);
         setCookie('username',public,365)
+        setCookie('image',image,365)
     } else if(image=='') {
         $("#shorUrlInput").val('pages/board/board?title='+encodeURIComponent(title)+'&public='+public);
         setCookie('username',public,365)
+        setCookie('image',image,365)
     } else {
         alert('请输入一个正确的网址');
     }
@@ -187,7 +189,7 @@ function getCookie(c_name)
             c_end=document.cookie.indexOf(";",c_start)
             if(c_end==-1) c_end=document.cookie.length
                 return unescape(document.cookie.substring(c_start,c_end))
-            } 
+        }
     }
     return ""
 }
@@ -217,4 +219,12 @@ function checkCookie()
     //         setCookie('username',username,365)
     //     }
     // }
+    image=getCookie('image')
+    if (image!=null && image!="")
+    {
+        $(".picInputUrl").attr('value',image);
+        $(".picInputUrl").attr('placeholder',"");
+        $("#coverImg").prop("src",image);
+        $("#imgLookBtn").prop("href",image);
+    }
 }
