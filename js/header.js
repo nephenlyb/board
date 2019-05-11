@@ -2,56 +2,6 @@
  * Created by jin on 2018/7/7.
  */
 loginGetCoin();
-/******************左侧系统通知   start ***************/
-$(document).ready(function () {
-    $.ajax({
-        url: '/home/Header/systemMenu',
-        type: 'get',
-        dataType: 'json',
-        success: function (con) {
-            if (con) {
-                con = $.parseJSON(con);
-                var str = '';
-                $.each(con.msg, function (key, val) {
-                    if(val.url.length>5){
-                        var url='<span><a href="'+val.url+'" target="_blank">' + val.title + '</a></span>';
-                    }else{
-                        var url='<span><a href="/help/'+val.id+'.html" target="_blank">' + val.title + '</a></span>';
-                    }
-                    str += ' <li>\n' +
-                        '                        <p>\n' +
-                        '                            <i class="fa fa-volume-up" aria-hidden="true"></i>\n' + url+'\n' +
-                        '                        </p>\n' +
-                        '                    </li>';
-                });
-                $(".header_News").find("ul").html(str);
-            }
-        }
-    });
-    $(document).on("mouseover", ".header_News > ul > li", function () {
-        header_is_gun = false;
-    });
-    $(document).on("mouseout", ".header_News > ul > li", function () {
-        header_is_gun = true;
-    });
-    var header_is_gun = true;
-    setInterval(function () {
-        var top = $(".header_News > ul").css("top");
-        top = parseInt(top);
-        var max = $(".header_News > ul > li").length;
-        if (top - 40 <= -(max * 40)) {
-            top = 0;
-            $(".header_News > ul").animate({top: top}, 1);
-        } else {
-            if (header_is_gun) {
-                $(".header_News > ul").animate({top: top - 40}, 1000)
-            }
-        }
-    }, 4000);
-});
-/**********左侧系统通知   end ***************/
-
-
 
 $(document).on('click', "#logout-xmyeditor", function () {
     edi_islogin = 1;
