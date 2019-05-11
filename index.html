@@ -7,6 +7,17 @@
     <meta name="description" content="小蚂蚁编辑器提供各种新媒体助手工具大全，其中包括微信图文视频提取，微信超链接，微信短网址,微信一键关注页面等，利用小工具往往能够达到事半功倍的效果，能大幅度提高微信图文的编辑排版效率！">
     <meta name="keywords" content="短网址,长链接转短链接">
     <link rel="stylesheet" href="css/tools.css?ver=180925"/>
+
+    <style>
+        /*微信背景图提取*/
+        .tools-right-wxbg{width:790px;margin:0 auto;margin-top:20px;overflow:hidden;padding-left:3px;box-sizing:border-box;text-align:center;font-size:0px;}
+        .tools-right-wxbg li{display:inline-block;vertical-align:top;text-align:center;margin:8px;}
+        .tools-right-wxbg .wxbg-p1{width:180px;height:180px;background-color:#f0f0f0;line-height:178px;}
+        .tools-right-wxbg .wxbg-p1 img{max-width:100%;max-height:100%;vertical-align:middle;}
+        .tools-right-wxbg .wxbg-p2{background-color:#44b549;margin:0 auto;margin-top:5px;cursor:pointer;height:28px;border-radius:3px;}
+        .tools-right-wxbg .wxbg-p2:hover{background-color:#2f9833;}
+        .tools-right-wxbg .wxbg-p2 a{display:inline-block;width:100%;height:100%;color:#fff;line-height:28px;font-size:14px;}
+    </style>
 </head>
 <body>
 <!-- 顶部 -->
@@ -56,20 +67,20 @@
 
         <!-- 左侧导航菜单 -->
         <div class="toolsLeft">
-    <div onclick="location.href='/tools/index.html'" class="toolsLeftMenu  tabMenu0 toolsLeftMenuColor">新媒体助手大全</div>
+    <div onclick="window.open('http://www.xmyeditor.com/tools/index.html')" class="toolsLeftMenu  tabMenu0 toolsLeftMenuColor">新媒体助手大全</div>
 <div class="toolsLeftMenu tabMenu2 toolsLeftMenuColor">新建留言板</div>
-<div onclick="location.href='http://www.xmyeditor.com/tools/attention.html'" class="toolsLeftMenu tabMenu2 ">一键关注</div>
-<div onclick="location.href='http://www.xmyeditor.com/tools/short.html'" class="toolsLeftMenu tabMenu3">短网址</div>
-<div onclick="location.href='http://www.xmyeditor.com/tools/hyperlink.html'" class="toolsLeftMenu tabMenu4 ">微信超链接</div>
-<div onclick="location.href='http://www.xmyeditor.com/tools/video.html'" class="toolsLeftMenu tabMenu1 ">微信视频提取</div>
-<div onclick="location.href='http://www.xmyeditor.com/tools/music.html'" class="toolsLeftMenu tabMenu6 ">音乐/音频提取</div>
-<div onclick="location.href='http://www.xmyeditor.com/tools/background.html'" class="toolsLeftMenu tabMenu8 ">微信背景图提取</div>
-<div onclick="location.href='http://www.xmyeditor.com/tools/cover.html'" class="toolsLeftMenu tabMenu5 ">微信封面图提取</div>
-<div onclick="location.href='http://www.xmyeditor.com/tools/change.html'" class="toolsLeftMenu tabMenu7 ">临时转永久链接</div>
+<div onclick="window.open('http://www.xmyeditor.com/tools/attention.html')" class="toolsLeftMenu tabMenu2">一键关注</div>
+<div onclick="window.open('http://www.xmyeditor.com/tools/short.html')" class="toolsLeftMenu tabMenu3">短网址</div>
+<div onclick="window.open('http://www.xmyeditor.com/tools/hyperlink.html')" class="toolsLeftMenu tabMenu4 ">微信超链接</div>
+<div onclick="window.open('http://www.xmyeditor.com/tools/video.html')" class="toolsLeftMenu tabMenu1 ">微信视频提取</div>
+<div onclick="window.open('http://www.xmyeditor.com/tools/music.html')" class="toolsLeftMenu tabMenu6 ">音乐/音频提取</div>
+<div onclick="window.open('http://www.xmyeditor.com/tools/background.html')" class="toolsLeftMenu tabMenu8 ">微信背景图提取</div>
+<div onclick="window.open('http://www.xmyeditor.com/tools/cover.html')" class="toolsLeftMenu tabMenu5 ">微信封面图提取</div>
+<div onclick="window.open('http://www.xmyeditor.com/tools/change.html')" class="toolsLeftMenu tabMenu7 ">临时转永久链接</div>
 <a href="http://www.xmyeditor.com/ysdm.html">
     <div class="toolsLeftMenu">颜色代码</div>
 </a>
-<div class="toolsLeftMenu" onclick="window.open('/sucai.html')"><a href="javascript:;"  style="color: #2D2D2d">热搜图文</a></div>
+<div class="toolsLeftMenu" onclick="window.open('http://www.xmyeditor.com/sucai.html')"><a href="javascript:;"  style="color: #2D2D2d">热搜图文</a></div>
 <div class="toolsLeftMenu" onclick="window.open('https://wj.qq.com/')"><a href="javascript:;" style="color: #2D2D2d">问卷调查</a></div>
 <div class="toolsLeftMenu" onclick="window.open('http://image.baidu.com/')"><a href="javascript:;" style="color: #2D2D2d">百度搜图</a></div>
 <div class="toolsLeftMenu" onclick="window.open('http://www.xmyeditor.com/tools/xiuxiu.html')"><a href="javascript:;" style="color: #2D2D2d">在线美图</a></div>
@@ -101,9 +112,20 @@
                         <p class="toolsRightFirstP1">小程序路径：</p>
                         <input type="" name="" class="toolsRightFirstInput1 shorUrlInput" id="shorUrlInput">
                         <p class="toolsRightFirstP2 fzBtn">复制</p>
-                        <img id="tu" style="width: 150px; padding-top: 20px; height: 150px;" src="images/sprogram.png">
+                       <!--  <img id="tu" style="width: 150px; padding-top: 20px; height: 150px;" src="images/sprogram.png"> -->
                     </div>
-                    <div class="toolsRightSecond"><a href="http://www.nephen.cn/2019/04/04/订阅号留言板：公众号留言功能开通新思路！/" target="_blank">点击此处查看帮助教程</a></div>
+
+
+                    <div class="toolsRightCoverDrawing">
+                        <p style="color: #44b549;font-size: 14px;margin-top: 40px;">如背景图片有填写，点击【生成】后会在下发显示原图。<br>如不显示图片，请点下方【打开】按钮，再按F5刷新一下即可显示！</p>
+                        <p class="toolsRightCoverDrawingp1"><img src="images/nopic.png" id="coverImg"></p>
+                        <p class="toolsRightCoverDrawingp2"><a href="/" id="imgLookBtn" style="color: #ffffff;">打开</a></p>
+                    </div>
+
+
+                    <div class="toolsRightSecond"><a href="http://www.nephen.cn/2019/04/04/订阅号留言板：公众号留言功能开通新思路！/" target="_blank">点击此处查看详细使用教程</a></div>
+
+
                     <p class="toolsRightThirdTitle">使用说明：</p>
                     <p class="toolsRightThirdTxt">1、公众号名字填写已经入驻成功的公众号名字。</p>
                     <p class="toolsRightThirdTxt">2、留言板标题建议填写即将发布的推文标题。</p>

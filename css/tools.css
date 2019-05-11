@@ -101,7 +101,7 @@
     float:left;}
 
 /*帮助跳转文字*/
-.toolsRightSecond{width:790px;text-align:right;margin:30px auto 100px;}
+.toolsRightSecond{width:790px;text-align:right;margin:30px auto 10px;}
 .toolsRightSecond a{color: #44B549;font-size:12px;letter-spacing:1px;}
 .toolsRightSecond a:hover{color: #2F9833;}
 

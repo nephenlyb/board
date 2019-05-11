@@ -73,13 +73,15 @@ $(document).on("click",".newBoardBtn",function(){
     var public  = $(".publicInputText").val();
     var title = $(".titleInputText").val();
     var image =  $(".picInputUrl").val();
-    console.log(public)
+    // console.log($("#coverImg").prop("src"))
     if(public=='') {
         alert('请输入公众号名字');
     } else if(title=='') {
         alert('请输入留言板标题');
     } else if(image.indexOf("http")>-1){
         $("#shorUrlInput").val('pages/board/board?title='+encodeURIComponent(title)+'&public='+public+'&image='+image);
+        $("#coverImg").prop("src",image);
+        $("#imgLookBtn").prop("href",image);
     } else if(image=='') {
         $("#shorUrlInput").val('pages/board/board?title='+encodeURIComponent(title)+'&public='+public);
     } else {
