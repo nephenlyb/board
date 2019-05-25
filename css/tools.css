@@ -124,7 +124,13 @@
     margin:0 auto;
     text-align:left;}
 
+.toolsRightThirdTxt a{
+    color: red;
+}
 
+.toolsRightThirdTxt a:hover{
+    color: #FFC0CB;
+}
 
 /*视频提取*/
 .toolsRightVideo{padding-top:90px;padding-bottom:100px;box-sizing:border-box;}
