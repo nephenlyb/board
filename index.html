@@ -78,6 +78,15 @@
         var poster_id = $(this).data("id");
         posterCount(poster_id,3);
     })
+    function noticeUp(obj,top,time) {
+     $(obj).animate({
+     marginTop: top
+     }, time, function () {
+     $(this).css({marginTop:"0"}).find(":first").appendTo(this);
+     })
+    }
+
+     setInterval("noticeUp('.notice ul','-35px',500)", 2000);
 </script>
 
 
@@ -117,6 +126,15 @@
             <!-- 小蚂蚁微信短网址工具 -->
             <div class="toolsRightBg tabBg3">
                 <div class="toolsRightTitle">订阅号留言板小程序（建议收藏该网页）</div>
+
+                <div class="notice">
+                 <ul>
+                 <li>第一次使用时，请参考下方的视频</li>
+                 <li>男性粉丝较多，有变现需求的可以联系客服（小程序推广获取佣金）</li>
+                 <li>如话题比较敏感，请关闭多人回复，开启精选功能，留言审核发现有不良言论，会被拉黑限制使用！</li>
+                 </ul>
+                </div>
+
                 <div class="toolsRightBody toolsRightVideo">
                     <div class="toolsRightFirst">
                         <p class="toolsRightFirstP1">公众号名字：</p>
