@@ -96,7 +96,7 @@ $(document).on("click",".newBoardBtn",function(){
 * 营销工具------观看使用视频
 * */
 $(document).on("click",".watchVideo",function(){
-    window.open("https://v.qq.com/x/page/e0885jafdsi.html");
+    window.open("http://qq.cn.hn/jNx");
 });
 /*
 * 营销工具------微信短网址
