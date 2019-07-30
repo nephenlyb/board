@@ -93,6 +93,12 @@ $(document).on("click",".newBoardBtn",function(){
     }
 });
 /*
+* 营销工具------观看使用视频
+* */
+$(document).on("click",".watchVideo",function(){
+    window.open("https://mp.weixin.qq.com/cgi-bin/appmsg?begin=0&count=10&action=list_video&type=15&token=973524001&lang=zh_CN"，"_blank");
+});
+/*
 * 营销工具------微信短网址
 * */
 $(document).on("click",".shortUrlBtn",function(){

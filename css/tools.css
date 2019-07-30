@@ -99,6 +99,18 @@
     color:#333;
     text-align:left;
     float:left;}
+.toolsRightFirstP4{
+    margin-left: 10px;
+    width:140px;
+    height:30px;
+    font-size:14px;
+    line-height:30px;
+    color:red;
+    text-align:left;
+    float:left;
+    text-decoration:underline;
+}
+.toolsRightFirstP4:hover{color: #FFC0CB;}
 
 /*帮助跳转文字*/
 .toolsRightSecond{width:790px;text-align:right;margin:30px auto 10px;}
