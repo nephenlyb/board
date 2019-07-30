@@ -108,6 +108,7 @@
     color:red;
     text-align:left;
     float:left;
+    cursor: pointer;
     text-decoration:underline;
 }
 .toolsRightFirstP4:hover{color: #FFC0CB;}
