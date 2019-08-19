@@ -96,7 +96,7 @@ $(document).on("click",".newBoardBtn",function(){
 * 营销工具------观看使用视频
 * */
 $(document).on("click",".watchVideo",function(){
-    window.open("https://v.qq.com/x/page/r0906x03k78.html");
+    window.open("https://mp.weixin.qq.com/mp/video?__biz=MzU2MDcwOTUzOA==&mid=100000265&sn=238af017151fdc520d98665e6df503d1&vid=wxv_947231037862608896&idx=1&vidsn=bf757e4d9af10f597676b0d77cfc41b7&fromid=1&scene=20&xtrack=1&clicktime=1566052372#wechat_redirect");
 });
 /*
 * 营销工具------微信短网址
