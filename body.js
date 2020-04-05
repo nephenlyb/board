@@ -110,7 +110,7 @@ document.writeln("                <div class=\'notice\'>");
 document.writeln("                    <ul>");
 document.writeln("                        <li>原订阅号留言板暂时弃用，具体操作请查看最新使用视频。</li>");
 document.writeln("                        <li>2019-08-20号公众号更新，导致访问小程序会弹出提示，建议大家采用小程序卡片作为展示方式。</li>");
-document.writeln("                        <li>如需申请入驻留言板，请扫描右侧二维码</li>");
+document.writeln("                        <li>如需申请入驻留言板，请点击左侧菜单「入驻留言板，」或扫描「右侧二维码」</li>");
 document.writeln("                    </ul>");
 document.writeln("                </div>");
 document.writeln("");
